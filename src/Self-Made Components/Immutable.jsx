@@ -7,8 +7,7 @@ const NavTop = styled.div`
   `;
 
 const Body=styled.div`
-
-
+    
 `
 
 const OuletDoor=styled.div`
@@ -32,7 +31,7 @@ const Right = styled.div`
   justify-content: flex-end;
 `;
 
-function Navbar() {
+function Immutable() {
   const LinkStyle = ({ isActive, isPending }) => {
     return {
       fontWeight: isActive ? "bold" : "500",
@@ -46,20 +45,19 @@ function Navbar() {
     <NavTop>
       <Nav>
         <Left>
-          <Logo>React Render</Logo>
+          <Logo>Immutable State</Logo>
         </Left>
         <Right>
-          <NavLink to="/" style={LinkStyle}>
-            Home
+          <NavLink to="object" style={LinkStyle}>
+            Object
+
+         
           </NavLink>
-          <NavLink to="use-state" style={LinkStyle}>
-            useState
+          <NavLink to="array" style={LinkStyle}>
+           Array
           </NavLink>
-          <NavLink to="use-reducer" style={LinkStyle}>
-            useReducer
-          </NavLink>
-          <NavLink to="immutable-state" style={LinkStyle}>
-            Object State
+          <NavLink to="" style={LinkStyle}>
+         
           </NavLink>
         </Right>
       </Nav>
@@ -71,4 +69,4 @@ function Navbar() {
   );
 }
 
-export default Navbar;
+export default Immutable;

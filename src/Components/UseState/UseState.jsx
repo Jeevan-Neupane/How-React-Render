@@ -38,10 +38,7 @@ function UseState() {
       <Button onClick={()=>setCount(0)}>{count}</Button>
       <Button onClick={()=>setCount(5)}>{count}</Button>
       <Imp>React Strict Mode cause the twice console log which wraps app component in main.jsx</Imp>
-      <Imp></Imp>
-      <Imp></Imp>
-      <Imp></Imp>
-      <Imp></Imp>
+   
     </Main>
   );
 }
