@@ -6,6 +6,14 @@ import UseReducer from "./Components/UseState/UseReducer"
 import ObjectUseState from "./Components/Immutable State/ObjectUseState"
 import Immutable from "./Self-Made Components/Immutable"
 import ArrayUseState from "./Components/Immutable State/Array"
+import Parent from "./Components/Parent Child/Parent"
+import Parent1 from "./Components/Optimization/Parent1"
+import ChildOne from "./Components/Optimization/ChildOne"
+import GrandParent from "./Components/Optimization/GrandParent"
+import Optimization from "./Self-Made Components/Optimization"
+import ParentTwo from "./Components/Optimization/ParentTwo"
+import ParentThree from "./Components/Incorrect Optimization/Parent3"
+import ParentFour from "./Components/Incorrect Optimization/ParentFour"
 
 
 
@@ -30,6 +38,12 @@ function App() {
           <Route path="object" element={<ObjectUseState/>}/>
           <Route path="array" element={<ArrayUseState/>}/>
 
+        </Route>
+        <Route path="child-parent" element={<Parent/>}/>
+        <Route path="optimization" element={<Optimization/>}>
+          <Route path="prop-pass" element={<GrandParent/>}/>
+          <Route path="react-memo" element={<ParentTwo/>}/>
+          <Route path="incorrect-optmization" element={<ParentFour />}/>
         </Route>
 
       </Route>

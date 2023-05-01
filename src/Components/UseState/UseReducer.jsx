@@ -5,20 +5,17 @@ const Container = styled.div``;
 const Button = styled.button`
   padding: 20px 30px;
   margin-left: 30px;
-  border:none;
-c
+  border: none;
+  background-color: #569DAA;
   font-size: 20px;
   border-radius: 10px;
-  color:white;
+  color: white;
   cursor: pointer;
-
-
 `;
-const Value=styled.div`
-font-size: 80px;
-font-weight: 800;
-  
-`
+const Value = styled.div`
+  font-size: 80px;
+  font-weight: 800;
+`;
 
 const Increment = "INCREMENT";
 const Decrement = "DECREMENT";
@@ -42,11 +39,9 @@ const reducer = (state, action) => {
 };
 
 function UseReducer() {
-  const [count, dispatch] = useReducer(reducer,intialState);
-  console.log("Hello")
-  
+  const [count, dispatch] = useReducer(reducer, intialState);
+  console.log("Hello");
 
-  
   return (
     <Container>
       <Value>{count}</Value>

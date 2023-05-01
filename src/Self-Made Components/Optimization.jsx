@@ -7,8 +7,7 @@ const NavTop = styled.div`
   `;
 
 const Body=styled.div`
-
-
+    
 `
 
 const OuletDoor=styled.div`
@@ -32,7 +31,7 @@ const Right = styled.div`
   justify-content: flex-end;
 `;
 
-function Navbar() {
+function Optimization() {
   const LinkStyle = ({ isActive, isPending }) => {
     return {
       fontWeight: isActive ? "bold" : "500",
@@ -46,28 +45,22 @@ function Navbar() {
     <NavTop>
       <Nav>
         <Left>
-          <Logo>React Render</Logo>
+          <Logo>Optimization</Logo>
         </Left>
         <Right>
-          <NavLink to="/" style={LinkStyle}>
-            Home
-          </NavLink>
-          <NavLink to="use-state" style={LinkStyle}>
-            useState
-          </NavLink>
-          <NavLink to="use-reducer" style={LinkStyle}>
-            useReducer
-          </NavLink>
-          <NavLink to="immutable-state" style={LinkStyle}>
-            Immutable State
-          </NavLink>
-          <NavLink to="child-parent" style={LinkStyle}>
-            Child Parent
-          </NavLink>
-          <NavLink to="optimization" style={LinkStyle}>
-           Optimization
-          </NavLink>
+          <NavLink to="prop-pass" style={LinkStyle}>
+            Prop Pass
 
+         
+          </NavLink>
+          <NavLink to="react-memo" style={LinkStyle}>
+            React Memo
+        
+          </NavLink>
+          <NavLink to="incorrect-optmization" style={LinkStyle}>
+            Incorrect Optimization
+         
+          </NavLink>
         </Right>
       </Nav>
     </NavTop>
@@ -78,4 +71,4 @@ function Navbar() {
   );
 }
 
-export default Navbar;
+export default Optimization;
