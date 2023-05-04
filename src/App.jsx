@@ -14,6 +14,7 @@ import Optimization from "./Self-Made Components/Optimization"
 import ParentTwo from "./Components/Optimization/ParentTwo"
 import ParentThree from "./Components/Incorrect Optimization/Parent3"
 import ParentFour from "./Components/Incorrect Optimization/ParentFour"
+import ContextParent from "./Components/Context/ContextParent"
 
 
 
@@ -45,6 +46,7 @@ function App() {
           <Route path="react-memo" element={<ParentTwo/>}/>
           <Route path="incorrect-optmization" element={<ParentFour />}/>
         </Route>
+          <Route path="context" element={<ContextParent/>}/>
 
       </Route>
 

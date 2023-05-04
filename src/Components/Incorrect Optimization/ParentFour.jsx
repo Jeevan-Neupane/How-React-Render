@@ -1,4 +1,5 @@
-import {  useState } from "react";
+import {  useState,useCallback,useMemo } from "react";
+
 import styled from "styled-components";
 import { MemorizedChildFive } from "./ChildFive";
 
@@ -32,19 +33,21 @@ function ParentFour({children}) {
     firstName:"Bruce",
     lastName:"Wayne",
   }
+
+  const memomizedPerson=useMemo(()=>Person,[]);
 const array=[1,2,3,4,5]
   const handleClick=()=>{
     console.log("I am clicked");
   }
 
 
-  console.log("I am Rendering from ParentTwo")
+  console.log("I am Rendering from parent Four")
 
-  const handleCount = () => {
+  const handleCount = useCallback(() => {
     setCount((count) => {
       return count + 1;
     });
-  };
+  },[count]);
 
   return (
     <Main>
@@ -59,7 +62,7 @@ const array=[1,2,3,4,5]
 
         {/* <MemorizedChildFive name={name} person={Person}/> */}
         {/* <MemorizedChildFive name={name} handleClick={handleClick}/> */}
-        <MemorizedChildFive name={name} array={array}/>
+        <MemorizedChildFive name={name} person={memomizedPerson}/>
       </Imp>
      
    

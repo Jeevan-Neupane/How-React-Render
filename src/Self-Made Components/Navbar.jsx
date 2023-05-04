@@ -67,6 +67,9 @@ function Navbar() {
           <NavLink to="optimization" style={LinkStyle}>
            Optimization
           </NavLink>
+          <NavLink to="context" style={LinkStyle}>
+           Context
+          </NavLink>
 
         </Right>
       </Nav>

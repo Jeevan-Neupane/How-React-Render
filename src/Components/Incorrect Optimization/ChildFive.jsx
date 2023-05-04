@@ -1,11 +1,11 @@
 import React from 'react'
 
-function ChildFive({name,person,handleClick,array}) {
+function ChildFive({name,person,handleClick}) {
     console.log("Child Five Render");
   return (
     <div onClick={handleClick}>
-      {/* Hello {name} {person.firstName} {person.lastName} */}
-      Hello {name} {array}
+      Hello {name} {person.firstName} {person.lastName}
+     
     </div>
   )
 }
